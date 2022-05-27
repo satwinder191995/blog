@@ -1,0 +1,15 @@
+<article class="post">
+  <header class="row">
+    <h2 class="col fs-4">{{title}}</h2>
+    <h3 class="col fs-6 text-end">Posted by {{user.username}} on {{format_date created_at}}</h3>
+    {{!-- <span>({{format_url post_url}})</span> --}}
+  </header>
+<section>
+  <p class="mb-3 fs-5">{{article}}</p>
+</section>
+  <footer class="meta">
+    {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
+    |
+    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+  </footer>
+</article>

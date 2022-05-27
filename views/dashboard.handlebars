@@ -1,0 +1,33 @@
+<section class="container">
+  <h2 class="mx-2 text-center text-md-start ">Create New Post</h2>
+
+  <form class="new-post-form mx-2 ">
+    <div class="row">
+      <label for="post-title" class="col-12 col-md-1">Title</label>
+      <input class="col-12 col-md-4" type="text" id="post-title" name="post-title" />
+    </div >
+    <div class="row my-2">
+      <label class="col-12 col-md-1" for="post-url">Article</label>
+      <textarea class="col-12 col-md-4" id="post-url" name="post-url" rows="5" ></textarea>
+    </div>
+    <div class="row ">
+    <button type="submit" class="btn col-12 col-md-5 bg-primary ">Create</button>
+    </div>
+  </form>
+</section>
+
+{{#if posts.length}}
+<section class="container">
+  <h2 class="m-2">Your Posts</h2>
+  <ol class="m-2 list-group">
+    {{#each posts as |post|}}
+    <li class="m-1 list-group-item list-group-item-secondary">
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-post.js"></script>

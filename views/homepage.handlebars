@@ -1,0 +1,7 @@
+<ul class="list-group">
+  {{#each posts as |post|}}
+  <li class="m-1 list-group-item list-group-item-secondary overflow-auto">
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ul>
