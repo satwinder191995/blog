@@ -77,11 +77,14 @@ router.get('/post/:id', (req, res) => {
       }
 
       const post = dbPostData.get({ plain: true });
-
+     if(req.session.loggedIn){
       res.render('single-post', {
         post,
         loggedIn: req.session.loggedIn
       });
+    }else{
+      res.render('login')
+    }
     })
     .catch(err => {
       console.log(err);
