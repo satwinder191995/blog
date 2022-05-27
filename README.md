@@ -1,8 +1,8 @@
- # E-commerce backend App [![badge](https://img.shields.io/badge/license-MIT-brightgreen)](./LICENSE)
+ # Tech blog [![badge](https://img.shields.io/badge/license-MIT-brightgreen)](./LICENSE)
 
   ## Description
 
-  A node.js application that uses different route to get , update and delete different categories , products and tags for a retail company
+  A tech blog application where someone can post blog and update post. Users can create account and create new post , update and delete.
 
   ## Table of Contents
   - [Description](#description)
@@ -15,11 +15,11 @@
 
   ## Installation
 
-  Packages installed are:<br>  1. npm init <br> 2. npm express <br> 3. npm nodemon <br>4. npm sequelize <br> 5. npm MySQL2 
+  Packages installed are:<br>  1. npm init <br> 2. npm express <br> 3. npm nodemon <br>4. npm sequelize <br> 5. npm MySQL2 <br> 6. npm express-sessions <br> 7. npm connect-session-sequelize <br> 8. npm dotenv
 
   ## Usage
 
- It is easy to manage retail shoop using different routes.GET , POST , PUT  and  DELETE are very useful tools in backend.
+    Blog app , where users can post tech realted articles. Users can easily mantain their posts. We can create accounts and track our posts in the dashbord.
 
   ## License
 
